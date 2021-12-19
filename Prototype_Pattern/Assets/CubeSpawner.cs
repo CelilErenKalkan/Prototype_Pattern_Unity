@@ -10,5 +10,7 @@ public class CubeSpawner : MonoBehaviour
     {
         if (Random.Range(0, 100) < 10)
             ProcCube.Clone(this.transform.position);
+        else if (Random.Range(0, 100) < 10)
+            ProcSphere.Clone(this.transform.position);
     }
 }
